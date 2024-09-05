@@ -1,5 +1,4 @@
 from django.db import models
-from telethon import TelegramClient
 
 class Region(models.Model):
     title = models.CharField(max_length=255)
@@ -19,7 +18,8 @@ class District(models.Model):
 
     class Meta:
         ordering = ["order_id", "id"]
-    def __str__(self) -> str:
+        
+    def __str__(self):
         return self.title
     
 class Social(models.Model):

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'apps.news',
     'apps.telegram',  
     'apps.users',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+from core.ckeditor_configs import CKEDITOR_CONFIGS
